@@ -1,0 +1,23 @@
+// Place all the styles related to the Games controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.wrapper {
+    display: grid;
+    grid-template-columns: 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px;
+    grid-template-rows: 80px auto 80px; 
+    grid-column-gap: 20px;
+  }
+  .wrapper {
+    border-radius: 5px;
+    background-color: white;
+  }
+  *{
+      box-sizing: border-box;
+  }
+  .wrapper > div {
+    border: 2px solid #ffa94d;
+    border-radius: 5px;
+    background-color: #ffd8a8;
+    padding: 1em;
+    color: #d9480f;
+  }

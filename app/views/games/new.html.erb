@@ -1,0 +1,16 @@
+
+<body>
+    <div class="wrapper">
+     <%@letters.each do |letter| %>
+        <div><%=letter%> </div>
+        <% end %>
+      </div>
+
+
+
+<%= form_tag('/posts') do -%>
+<%= hidden_field_tag 'letters', @letters %>
+<%=text_field_tag 'name',nil, class:"input"%>
+  <div><%= submit_tag 'Play' %></div>
+<% end -%>
+</body>
